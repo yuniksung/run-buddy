@@ -140,14 +140,25 @@ footer a{
   padding: 10px 20px;
   font-size: 16px;
 }
-/* Hero Form Style End */
 
+/* What we do style start */
 .intro p{
     /* add this alongside your other declarations */
   margin: 0 auto;
   text-align: center;
 }
 
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 32px auto;
+  width: 50%;
+}
+
+/* What you do style start */
 .steps{
   background-color: #fce138;
 }
@@ -159,16 +170,6 @@ footer a{
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
   border-color: #39a6b2;
-}
-
-.section-title {
-  font-size: 48px;
-  border-bottom: 3px solid;
-  color: #024e76;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 32px auto;
-  width: 50%;
 }
 
 .primary-border {
@@ -226,8 +227,8 @@ footer a{
   line-height: 1.5;
   color: #024e76;
 }
-/* Meet the trainers style start */
 
+/* Meet the trainers style start */
 .trainer{
   margin: 20px;
   background: #024e76;
@@ -349,19 +350,110 @@ footer a{
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header h1 a {
-    
+  header {
+    padding-bottom: 0;
+    justify-content: center;
   }
-}
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+    
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+  }
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
- 
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
   }
 }
