@@ -46,29 +46,6 @@ header nav ul {
   list-style: none;
 }
 
-footer{
-  background-color: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2{
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div{
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a{
-  color: #024e76;
-}
 
 /* Hompage Hero Style Start */
 .hero{
@@ -348,6 +325,67 @@ footer a{
   flex-wrap: wrap;
 }
 
+/*service plan */
+.service-grid-container {
+  display: grid;
+}
+
+.service-grid-item {
+  background-color: orange;
+  border: solid;
+  padding: 1em;
+  color: black;
+}
+
+.service-grid-container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.box1 {
+  grid-column: 1/ span 1; 
+  grid-row: 1/ span 2; 
+}
+
+.box2 {
+  grid-column: 3/4; 
+  grid-row: 1/-1; 
+}
+
+.box3 {
+  grid-column: 2/ span 2; 
+  grid-row: 3/ span 1; 
+}
+
+/* footer start */
+footer{
+  background-color: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2{
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div{
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a{
+  color: #024e76;
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -455,5 +493,5 @@ footer a{
   .contact-form {
     order: 3;
   }
-  }
+  
 }
