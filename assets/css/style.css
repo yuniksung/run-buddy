@@ -47,6 +47,13 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -114,10 +121,16 @@ header nav ul {
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  background-color: rgba(255,255,255, 0.75);
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -131,6 +144,10 @@ header nav ul {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
 }
 
 /* What we do style start */
@@ -176,11 +193,15 @@ header nav ul {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -308,11 +329,17 @@ header nav ul {
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75)
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .contact-form button{
@@ -323,6 +350,11 @@ header nav ul {
   padding: 15px 0;
   font-size: 16px;
   border-radius: 15px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 /* REACH OUT STYLES END */
@@ -469,6 +501,7 @@ footer a{
     flex: 1 100%;
   }
   }
+
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
